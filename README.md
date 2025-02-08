@@ -35,25 +35,13 @@ The dataset used for this project is the MNIST dataset, which contains 28x28 gra
 git clone https://github.com/yourusername/Handwritten-Digit-Classification-with-CNN.git
 cd Handwritten-Digit-Classification-with-CNN
 2️⃣ Create Virtual Environment (Optional but Recommended)
-
-bash
-Copy
-Edit
 python -m venv venv
 source venv/bin/activate  # For Mac/Linux
 venv\Scripts\activate  # For Windows
 3️⃣ Install Dependencies
-
-bash
-Copy
-Edit
 pip install -r requirements.txt
 4️⃣ Train the Model (Optional)
 If you want to retrain the model, run:
-
-bash
-Copy
-Edit
 python train.py
 This will save the model as digit_model.h5.
 
@@ -61,22 +49,12 @@ This will save the model as digit_model.h5.
 🌐 Web API (FastAPI)
 Run the API locally:
 
-bash
-Copy
-Edit
 uvicorn app:app --host 0.0.0.0 --port 8000
 Then send a test request:
 
-bash
-Copy
-Edit
 curl -X POST -F "file=@test_digit.jpg" http://127.0.0.1:8000/predict/
 📱 Android App (TensorFlow Lite)
 Convert the model to TFLite format:
-
-bash
-Copy
-Edit
 tflite_convert --saved_model_dir=digit_model/ --output_file=digit_model.tflite
 Integrate it into an Android app using ML Kit.
 
@@ -88,8 +66,6 @@ Firebase Hosting (for web app)
 Using Python:
 
 python
-Copy
-Edit
 import tensorflow as tf
 from PIL import Image
 import numpy as np
@@ -124,10 +100,6 @@ OpenAI & Deep Learning Research
 📩 Contact
 For questions or suggestions, reach out:
 📧 Email: abenezeralz659@gmail.com
-
-vbnet
-Copy
-Edit
-
+    GitHub: https://github.com/Abena-3565
 
 This should give you a comprehensive and clean README for your project. Let me know if you'd like any modifications!
